@@ -2394,3 +2394,106 @@ Processing by ArticlesController#index as HTML
   [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
   Rendered articles/index.html.erb within layouts/application (3.3ms)
 Completed 200 OK in 142ms (Views: 140.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-01-01 07:16:12 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.6ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 345ms (Views: 305.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2015-01-01 07:16:13 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-01 07:16:13 -0600
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2015-01-01 07:16:13 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-01-01 07:16:13 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-01 07:16:13 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-01 07:16:13 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-01-01 07:16:13 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-01 07:16:13 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-01 07:16:13 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-01 07:16:23 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 72ms (Views: 71.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-01-01 07:16:24 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 114ms (Views: 113.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-01-01 07:16:25 -0600
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 129ms (Views: 127.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-01 07:18:24 -0600
+Processing by PagesController#home as HTML
+  [1m[35mArticle Load (0.7ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered pages/home.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 95ms (Views: 90.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-01 07:18:37 -0600
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered pages/home.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 87ms (Views: 77.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2015-01-01 07:18:37 -0600
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2015-01-01 07:18:37 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-01 07:18:37 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-01-01 07:18:37 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-01 07:18:37 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-01 07:18:37 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-01 07:18:37 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-01-01 07:18:37 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-01 07:18:37 -0600
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-01-01 07:18:40 -0600
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 75ms (Views: 71.6ms | ActiveRecord: 0.3ms)
