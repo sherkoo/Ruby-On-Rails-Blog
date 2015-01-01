@@ -9,7 +9,7 @@ module ApplicationHelper
   def page_title
     site_vars
     if @page_title
-      @page_title + ' - ' + @site_name
+      @page_title.downcase + ' - ' + @site_name
     else
       @site_name
     end
