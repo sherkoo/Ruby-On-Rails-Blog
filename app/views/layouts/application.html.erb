@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= page_title %></title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<!-- main header -->
+<header id="main-header" role="banner">
+  <div class="container">
+    <h1 id="logo"><%= link_to(@site_name, root_path) %></h1>
+    <nav class="main-navigation" role="navigation">
+      <ul>
+        <li><%= link_to('home', root_path) %></li>
+        <li><%= link_to('about', about_path) %></li>
+        <li><%= link_to('Blog', articles_path) %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- /main header -->
+
+<!-- main -->
+<main role="main">
+  <%= yield %>
+</main>
+<!-- /main -->
+
+</body>
+</html>
