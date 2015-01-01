@@ -2497,3 +2497,290 @@ Processing by ArticlesController#show as HTML
   [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
   Rendered articles/show.html.erb within layouts/application (0.8ms)
 Completed 200 OK in 75ms (Views: 71.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-01 07:19:45 -0600
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered pages/home.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 135ms (Views: 133.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-01-01 07:19:53 -0600
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 116ms (Views: 114.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-01-01 07:19:55 -0600
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 99ms (Views: 98.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-01-01 07:19:57 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 81ms (Views: 79.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-01 07:19:57 -0600
+Processing by PagesController#home as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered pages/home.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 95ms (Views: 93.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-01-01 07:19:59 -0600
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 75ms (Views: 73.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-01-01 07:20:00 -0600
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 87ms (Views: 85.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-01-01 07:20:23 -0600
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 82ms (Views: 80.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2015-01-01 07:20:23 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-01 07:20:23 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-01 07:20:23 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-01 07:20:23 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-01-01 07:20:23 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-01 07:20:23 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-01 07:20:23 -0600
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2015-01-01 07:20:23 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-01-01 07:20:23 -0600
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-01-01 07:25:55 -0600
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 150ms (Views: 141.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2015-01-01 07:25:55 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-01-01 07:25:55 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-01 07:25:55 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-01 07:25:55 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-01 07:25:55 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-01 07:25:55 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-01 07:25:55 -0600
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2015-01-01 07:25:55 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-01-01 07:25:55 -0600
+
+
+Started GET "/articles/1/edit" for 127.0.0.1 at 2015-01-01 07:25:57 -0600
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered articles/edit.html.erb within layouts/application (40.2ms)
+Completed 500 Internal Server Error in 44ms
+
+ActionView::Template::Error (undefined method `form' for #<Article:0x007ffc1dbff510>):
+    1: <h1>Edit</h1>
+    2: 
+    3: <% @article.form do |f| %>
+    4:   <ul>
+    5:     <li><%= f.text_field :title %></li>
+    6:     <li><%= f.text_field :body %></li>
+  app/views/articles/edit.html.erb:3:in `_app_views_articles_edit_html_erb___1265346728735548825_70360403798440'
+
+
+  Rendered /Users/stephen/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/stephen/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/stephen/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.2ms)
+
+
+Started GET "/articles/1/edit" for 127.0.0.1 at 2015-01-01 07:25:57 -0600
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered articles/edit.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `form' for #<Article:0x007ffc1cb53298>):
+    1: <h1>Edit</h1>
+    2: 
+    3: <% @article.form do |f| %>
+    4:   <ul>
+    5:     <li><%= f.text_field :title %></li>
+    6:     <li><%= f.text_field :body %></li>
+  app/views/articles/edit.html.erb:3:in `_app_views_articles_edit_html_erb___1265346728735548825_70360395056340'
+
+
+  Rendered /Users/stephen/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/stephen/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/stephen/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.0ms)
+
+
+Started GET "/articles/1/edit" for 127.0.0.1 at 2015-01-01 07:26:17 -0600
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered articles/edit.html.erb within layouts/application (283.2ms)
+Completed 200 OK in 360ms (Views: 358.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2015-01-01 07:26:17 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-01 07:26:17 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-01-01 07:26:17 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-01 07:26:17 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-01 07:26:17 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-01 07:26:17 -0600
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2015-01-01 07:26:17 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-01 07:26:17 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-01-01 07:26:17 -0600
+
+
+Started GET "/articles/1/edit" for 127.0.0.1 at 2015-01-01 07:26:27 -0600
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered articles/edit.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 82ms (Views: 80.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2015-01-01 07:26:28 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-01-01 07:26:28 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-01 07:26:28 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-01 07:26:28 -0600
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2015-01-01 07:26:28 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-01 07:26:28 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-01 07:26:28 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-01 07:26:28 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-01-01 07:26:28 -0600
+
+
+Started PATCH "/articles/1" for 127.0.0.1 at 2015-01-01 07:26:55 -0600
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wJO3w+J1H45b9lRh4XJ+g9yTWsL0CL2A5obQWPE9/P4=", "article"=>{"title"=>"this is my title CHANGED", "body"=>"this is my body text"}, "commit"=>"Update Article", "id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "articles" SET "title" = ?, "updated_at" = ? WHERE "articles"."id" = 1[0m  [["title", "this is my title CHANGED"], ["updated_at", "2015-01-01 13:26:55.631860"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles/1
+Completed 302 Found in 48ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-01-01 07:26:55 -0600
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 84ms (Views: 81.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2015-01-01 07:26:56 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-01 07:26:56 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-01-01 07:26:56 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-01 07:26:56 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-01 07:26:56 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-01 07:26:56 -0600
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2015-01-01 07:26:56 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-01 07:26:56 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-01-01 07:26:56 -0600
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-01-01 07:26:58 -0600
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 101ms (Views: 100.0ms | ActiveRecord: 0.3ms)
