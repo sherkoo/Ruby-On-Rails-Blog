@@ -1,9 +1,15 @@
-<h1>Login</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-3 col-center">
+      <h1>Login</h1>
 
-<%= form_tag '/login' do %>
+      <%= form_tag '/login', class: "form" do %>
 
-  Email: <%= text_field_tag :email %>
-  Password: <%= password_field_tag :password %>
-  <%= submit_tag "Login" %>
+        Email: <%= text_field_tag :email, nil, class: "form__input" %> <br />
+        Password: <%= password_field_tag :password, nil, class: "form__input" %> <br />
+        <%= submit_tag  :Login, class: "form__submit--black" %>
 
-<% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
