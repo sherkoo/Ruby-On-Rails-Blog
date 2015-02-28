@@ -7,7 +7,7 @@
         <article>
           <h2><%= link_to(article.title, article) %></h2>
           <small><%= article.created_at %></small>
-          <p><%= article.body %></p>
+          <p><%= truncate(article.body, length: 250) %></p>
         </article>
       <% end %>
     </div>
