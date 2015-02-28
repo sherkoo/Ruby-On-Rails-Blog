@@ -22,20 +22,17 @@
             <li class="header__nav__link"><%= link_to('Home', root_path) %></li>
             <li class="header__nav__link"><%= link_to('About', about_path) %></li>
             <li class="header__nav__link"><%= link_to('Blog', articles_path) %></li>
-            <li class="header__nav__link--right"><%= link_to('Login', login_path) %></li>
-            <li class="header__nav__link--right"><%= link_to('Sign Up', users_new_path) %></li>
+            <% if current_user %>
+              <li class="header__nav__link--right">Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %></li>
+            <% else %>
+              <li class="header__nav__link--right"><%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %></li>
+            <% end %>
           </ul>
         </nav> <!-- /.navbar -->
       </div> <!-- /.col-6 -->
     </div> <!-- /.row -->
   </div> <!-- /.container -->
 </header><!-- /main header -->
-
-<% if current_user %>
-  Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
-<% else %>
-  <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
-<% end %>
 
 <main role="main">
   <%= yield %>
