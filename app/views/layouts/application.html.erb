@@ -5,25 +5,25 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 </head>
 <body>
 
-<!-- main header -->
-<header id="main-header" role="banner">
+<header class="nav navbar-default" role="banner">
   <div class="container">
-    <h1 id="logo"><%= link_to(@site_name, root_path) %></h1>
-    <nav class="main-navigation" role="navigation">
-      <ul>
+    <div class="navbar-brand"><%= link_to(@site_name, root_path) %></div>
+    <nav role="navigation">
+      <ul class="nav navbar-nav">
         <li><%= link_to('home', root_path) %></li>
         <li><%= link_to('about', about_path) %></li>
         <li><%= link_to('Blog', articles_path) %></li>
         <li><%= link_to('Login', login_path) %></li>
         <li><%= link_to('Sign Up', users_new_path) %></li>
       </ul>
-    </nav>
-  </div>
-</header>
-<!-- /main header -->
+    </nav> <!-- /.navbar -->
+  </div> <!-- /.container -->
+</header><!-- /main header -->
 
 <% if current_user %>
   Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
@@ -31,11 +31,19 @@
   <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
 <% end %>
 
-<!-- main -->
 <main role="main">
-  <%= yield %>
-</main>
-<!-- /main -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <%= yield %>
+      </div>
+    </div> <!-- /.row -->
+  </div> <!-- /.container -->
+</main> <!-- /main -->
+
+<footer>
+
+</footer> <!-- /footer -->
 
 </body>
 </html>
