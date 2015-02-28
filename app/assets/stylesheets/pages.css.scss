@@ -29,3 +29,8 @@
   list-style: none;
   margin-left: 17px;
 }
+
+.header__nav__link--right{
+  @extend .header__nav__link;
+  float: right;
+}
