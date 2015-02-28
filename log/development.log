@@ -5430,3 +5430,56 @@ Started GET "/signup" for 127.0.0.1 at 2015-02-27 19:06:03 -0600
 Processing by UsersController#new as HTML
   Rendered users/new.html.erb within layouts/application (0.9ms)
 Completed 200 OK in 93ms (Views: 92.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-02-27 19:06:29 -0600
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 129ms (Views: 126.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-02-27 19:07:07 -0600
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 67ms (Views: 64.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-02-27 19:07:07 -0600
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2015-02-27 19:07:07 -0600
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-02-27 19:07:07 -0600
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-27 19:07:07 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-27 19:07:07 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-27 19:07:07 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-27 19:07:07 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-27 19:07:07 -0600
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2015-02-27 19:07:07 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-02-27 19:07:07 -0600
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-27 19:07:07 -0600
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-02-27 19:07:07 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-27 19:07:07 -0600
