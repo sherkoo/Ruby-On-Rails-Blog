@@ -1,0 +1,307 @@
+/**
+ * Basic CSS Grid
+ * --------------
+ * CONTENTS:
+ * INTRODUCTION.........How the grid system works.
+ * VARIABLES............Your settings.
+ * CONTAINER............Build the grid structure.
+ * COLUMNS..............Build our responsive widths around our breakpoints.
+ */
+
+/**
+ * Introduction
+ * ------------
+ * Basic CSS Grid was designed to be very light weight while
+ * also providing the tools to build a grid. Built on a 6 column
+ * layout, it also provides helper col classes with percents.
+ */
+
+/**
+ * Variables
+ * ---------
+ * 1. Options to set container width
+ * 2. Options for gutter width
+ * 3. Options for bottom margin
+ * 4. Breakpoints
+ */
+
+$grid-container-width: 1200px;
+
+$grid-col-margin: 1.5em;
+$grid-col-gutter: $grid-col-margin / 2;
+
+$grid-breakpoint-1: 800px;
+$grid-breakpoint-2: 400px;
+
+/* Setup */
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/**
+ * Container
+ * ---------
+ * 1. Wrapper around rows
+ * 2. Set width of wrapper
+ */
+
+.container{
+  width: 100%;
+  max-width: $grid-container-width;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/**
+ * Row
+ * ---
+ * 1. Allows row to clear
+ * 2. Used inside of .container
+ * 3. Use .row-no-gutter in addition to .row to remove gutter from columns
+ */
+
+.row{
+  *zoom: 1;
+}
+
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after{
+  clear: both;
+}
+
+/* Remove gutter from columns in this row */
+.row-no-gutter{
+  padding: 0 $grid-col-gutter;
+}
+
+.row-no-gutter [class*='col-']{
+  padding: 0;
+}
+
+/**
+ * Container-full
+ * --------------
+ * 1. Allows row to span entire width of browser
+ * 2. Use in place of .container
+ */
+
+.container-full{
+  width: 100%;
+  margin-bottom: $grid-col-margin;
+}
+
+/**
+ * Columns
+ * -------
+ * 1. Set percent based widths
+ * 2. Used in between .row
+ * 3. Should equal 100% - i.e. col-90 + col-10 = 100%
+ */
+
+/* Make columns nestable */
+[class*='col-'].nest{
+  padding: 0;
+}
+
+/* Global styling for columns */
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+.col-10, .col-20, .col-25, .col-40, .col-60, .col-75,{
+  float: left;
+  min-height: 1px;
+  padding: 0 $grid-col-gutter;
+  margin-bottom: $grid-col-margin;
+}
+
+/**
+ * Set column widths by name
+ * -------------------------
+ * 1. Contains 6 column
+ * 2. 100 / 6(cols) = 16.66666666, 100 - 16.6666666 = 83.33 etc
+ */
+
+.col-1{
+  width: 16.66%;
+}
+
+.col-2{
+  width: 33.33%;
+}
+
+.col-3{
+  width: 50%;
+}
+
+.col-4{
+  width: 66.66%;
+}
+
+.col-5{
+  width: 83.33%;
+}
+
+.col-6{
+  width: 100%;
+}
+
+/**
+ * Helper columns
+ * --------------
+ * 1. Percent based by class name
+ * 2. Center columns
+ */
+
+.col-10{
+  width: 10%;
+}
+
+.col-20{
+  width: 20%;
+}
+
+.col-25{
+  width: 25%;
+}
+
+.col-40{
+  width: 40%;
+}
+
+.col-60{
+  width: 60%;
+}
+
+.col-75{
+  width: 75%;
+}
+
+
+/* Center column */
+.col-center{
+  margin: 0 auto $grid-col-margin auto;
+  float: none;
+}
+
+/**
+ * Responsive
+ * ----------
+ * 1. Control breakpoints
+ */
+
+/* Determine how things will render on medium screens */
+@media all and (max-width: $grid-breakpoint-1){
+
+  .col-md-10{
+    width: 10%;
+  }
+
+  .col-md-20{
+    width: 20%;
+  }
+
+  .col-md-25{
+    width: 25%;
+  }
+
+  .col-md-40{
+    width: 40%;
+  }
+
+  .col-md-60{
+    width: 60%;
+  }
+
+  .col-md-75{
+    width: 75%;
+  }
+
+  .col-md-1{
+    width: 16.66%;
+  }
+
+  .col-md-2{
+    width: 33.33%;
+  }
+
+  .col-md-3{
+    width: 50%;
+  }
+
+  .col-md-4{
+    width: 66.66%;
+  }
+
+  .col-md-5{
+    width: 83.33%;
+  }
+
+  .col-md-6{
+    width: 100%;
+  }
+
+  .col-md-hide{
+    display: none;
+  }
+}
+
+/* Determine how things will render on smaller screens */
+@media all and (max-width: $grid-breakpoint-2){
+
+  .col-sm-10{
+    width: 10%;
+  }
+
+  .col-sm-20{
+    width: 20%;
+  }
+
+  .col-sm-25{
+    width: 25%;
+  }
+
+  .col-sm-40{
+    width: 40%;
+  }
+
+  .col-sm-60{
+    width: 60%;
+  }
+
+  .col-sm-75{
+    width: 75%;
+  }
+
+  .col-sm-1{
+    width: 16.66%;
+  }
+
+  .col-sm-2{
+    width: 33.33%;
+  }
+
+  .col-sm-3{
+    width: 50%;
+  }
+
+  .col-sm-4{
+    width: 66.66%;
+  }
+
+  .col-sm-5{
+    width: 83.33%;
+  }
+
+  .col-sm-6{
+    width: 100%;
+  }
+
+  .col-sm-hide{
+    display: none;
+  }
+}

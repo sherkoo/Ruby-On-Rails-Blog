@@ -1,3 +1,31 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body{
+  font: 16px/1.5 'helvetica neue', helvetica, arial, sans-serif;
+  color: #333;
+  margin: 0;
+}
+
+.header{
+  height: 55px;
+  line-height: 55px;
+  background-color: #e6e6e6;
+}
+
+.header__brand{
+  float: left;
+}
+
+.header__nav{
+  float: right;
+  margin: 0;
+}
+
+.header__nav__link{
+  float: left;
+  list-style: none;
+  margin-left: 10px;
+}
