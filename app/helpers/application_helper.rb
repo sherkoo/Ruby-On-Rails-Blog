@@ -3,6 +3,7 @@ module ApplicationHelper
   # site vars
   def site_vars
     @site_name = "Rails Blog"
+    @site_tagline = "This is a short description"
   end
 
   # page title
@@ -11,7 +12,7 @@ module ApplicationHelper
     if @page_title
       @page_title + ' - ' + @site_name
     else
-      @site_name
+      @site_name + ' - ' + @site_tagline
     end
   end
 
