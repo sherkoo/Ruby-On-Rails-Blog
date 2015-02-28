@@ -10,6 +10,11 @@
   margin-bottom: 10px;
 }
 
+.form__input--block{
+  @extend .form__input;
+  min-height: 300px;
+}
+
 .form__submit{
   line-height: 45px;
   height: 45px;
