@@ -15,4 +15,13 @@ module ApplicationHelper
     end
   end
 
+  # Page Description
+  def pageDescription
+    if @pageDescription
+      @pageDescription
+    else
+      @pageDescription = "Needs a page description";
+    end
+  end
+
 end

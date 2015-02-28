@@ -6,6 +6,7 @@ class PagesController < ApplicationController
 
   def about
     @page_title = "About"
+    @pageDescription = "this is the about page description"
   end
 
 end
