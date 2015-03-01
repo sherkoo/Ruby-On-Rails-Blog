@@ -7,8 +7,8 @@ body{
 a{
   text-decoration: none;
   color: #888;
-}
 
-a:hover{
-  color: #333;
+  &:hover{
+    color: #333;
+  }
 }
