@@ -19,7 +19,11 @@ class ArticlesController < ApplicationController
   end
 
   def new
-    @article = Article.new
+    if current_user
+      @article = Article.new
+    else
+      redirect_to '/login'
+    end
   end
 
   def destroy
