@@ -3,6 +3,10 @@
     <div class="col-4">
       <h1>Home page</h1>
 
+      <% if current_user %>
+        <%= link_to 'Post', new_article_path %>
+      <% end %>
+
       <% @articles.each do |article| %>
         <h2><%= link_to(article.title, article) %></h2>
       <% end %>
